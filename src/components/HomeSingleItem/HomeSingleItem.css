@@ -1,0 +1,131 @@
+.vertFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  grid-gap: 2px;
+  gap: 2px;
+  text-align: left;
+}
+
+.vertContainerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.vertContainerFlex:hover {
+  -webkit-box-shadow: 0px 16px 20px #00000029;
+  box-shadow: 0px 16px 20px #00000029;
+  cursor: pointer;
+}
+
+.galleryContainer {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  height: 450px;
+  border: 1px solid white;
+}
+
+.itemDetailsContainer {
+  padding: 6%;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+
+.HomeSingleItemImage {
+  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.itemTitleMore {
+  font-size: 23px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: rgb(22, 22, 21);
+}
+
+@media (max-width: 1166px) {
+  .HomeSingleItemImage {
+    height: 255px;
+  }
+
+  .itemTitleMore {
+    white-space: pre-wrap;
+    word-wrap: normal;
+    word-break: normal;
+    font-size: 30px;
+  }
+
+  .itemDetailsContainer {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .HomeSingleItemImage {
+    height: 255px;
+  }
+
+  .itemTitleMore {
+    font-size: 38px;
+  }
+  .itemDetailsContainer {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 766px) {
+  .itemTitleMore {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 669px) {
+  .itemTitleMore {
+    font-size: 28px;
+  }
+  .itemDetailsContainer {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 551px) {
+  .itemTitleMore {
+    font-size: 23px;
+  }
+}
+@media (max-width: 528px) {
+  .HomeSingleItemImage {
+    height: 210px;
+  }
+}
+
+@media (max-width: 462px) {
+  .HomeSingleItemImage {
+    height: 175px;
+  }
+}
+
+@media (max-width: 371px) {
+  .itemTitleMore {
+    font-size: 21px;
+  }
+}

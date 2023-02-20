@@ -1,0 +1,75 @@
+.paginationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 460px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: black;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  margin-bottom: 40px;
+}
+
+.paginateButton {
+  height: 60px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.paginateButton:hover {
+  cursor: pointer;
+}
+
+.indexCurrent {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+    sans-serif;
+  color: white;
+  font-size: 45px;
+}
+@media (max-width: 1030px) {
+  .paginationContainer {
+    width: 400px;
+  }
+  .indexCurrent {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 688px) {
+  .indexCurrent {
+    font-size: 29px;
+  }
+  .paginationContainer {
+    margin-top: 4%;
+    height: 40px;
+    width: 305px;
+  }
+  .paginateButton {
+    height: 40px;
+  }
+}
+@media (max-width: 468px) {
+  .paginationContainer {
+    width: 255px;
+  }
+  .indexCurrent {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 417px) {
+  .paginationContainer {
+    width: 225px;
+  }
+  .indexCurrent {
+    font-size: 20px;
+  }
+}

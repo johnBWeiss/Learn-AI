@@ -1,0 +1,109 @@
+.SideNavContainer {
+  width: var(--sideBarWidth);
+  position: absolute;
+  background-color: rgb(57, 4, 4);
+  background-image: url("../../assets/images/sideBarBackground.jpg");
+  height: 600px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 2%;
+  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.SideNavInnerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+.SideNavLogo {
+  width: 30px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding-bottom: 8%;
+  border-bottom: 4px solid transparent;
+}
+
+.SideNavLogo:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  transform: translateX(20%);
+}
+
+@media (max-width: 469px) {
+  .SideNavLogo {
+    width: 22px;
+  }
+}
+
+@media (max-height: 650px) {
+  .SideNavLogo {
+    width: 17px;
+  }
+  .SideNavContainer {
+    height: 520px;
+  }
+}
+
+@media (max-height: 550px) {
+  .SideNavContainer {
+    height: 460px;
+  }
+
+  .SideNavInnerContainer {
+    margin-top: 120px;
+  }
+}
+@media (max-height: 490px) {
+  .SideNavLogo {
+    width: 15px;
+  }
+  .SideNavContainer {
+    height: 360px;
+  }
+
+  .SideNavInnerContainer {
+    margin-top: 100px;
+  }
+}
+@media (max-height: 370px) {
+  .SideNavLogo {
+    width: 13px;
+  }
+  .SideNavContainer {
+    height: 300px;
+  }
+
+  .SideNavInnerContainer {
+    margin-top: 60px;
+  }
+}
