@@ -3,9 +3,7 @@ import './Home.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllGames, gameSelector } from '../../store/gameSlice';
 import HomeSingleItem from '../../components/HomeSingleItem/HomeSingleItem';
-import SideNav from '../../components/SideNav/SideNav';
-import CustomSpinner from '../../components/Spinner/Spinner';
-import Pagination from '../../components/Pagination/Pagination';
+
 import logos from '../../assets/logos/logoController';
 import PopUp from '../../components/PopUp/PopUp';
 import topScroll from '../../assets/images/topScroll.png';
@@ -20,34 +18,35 @@ const Home = () => {
     const { homeGamesArrayTotalLength, homeGamesArrayTitle, pending, showPopUp, gameOptions } = gameSlice;
     let homeGamesArray = [
         {
-            title: 'mobile senior',
+            title: 'Mobile Senior',
             thumbnail: senior,
             release_date: 'AI generated code review'
         },
         {
-            title: 'code enhancement',
+            title: 'Code Enhancement',
             thumbnail: senior,
-            release_date: 'refactor your code to perfection'
+            release_date: 'Refactor your code to perfection'
+        },
+
+        {
+            title: 'Content Scribe',
+            thumbnail: senior,
+            release_date: 'Generate production grade content '
         },
         {
-            title: 'team alignment',
+            title: 'Team Alignment',
             thumbnail: senior,
-            release_date: 'conform your code via team principles'
+            release_date: 'Conform your code to team principles'
         },
         {
-            title: 'team alignment',
+            title: 'Math Reducer',
             thumbnail: senior,
-            release_date: 'conform your code via team priciples'
+            release_date: 'Simplify complex math problems'
         },
         {
-            title: 'team alignment',
+            title: 'Private Tutor',
             thumbnail: senior,
-            release_date: 'conform your code via team priciples'
-        },
-        {
-            title: 'team alignment',
-            thumbnail: senior,
-            release_date: 'conform your code via team priciples'
+            release_date: 'Personilize your learning experience'
         }
 
     ]
@@ -91,14 +90,11 @@ const Home = () => {
 
 
     useEffect(() => {
-        dispatch(getAllGames([gameOptions, { indexStart: 0 }]));
-    }, [gameOptions, dispatch])
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+    }, [])
 
-    //The resetReffFatherHandler function resets the current index so each new search will display the results from the beginning
 
-    const resetReffFatherHandler = () => {
-        indexRef.current = 0;
-    }
+
 
 
 
@@ -108,7 +104,7 @@ const Home = () => {
             {!showPopUp && <div className='HomeContainer'>
                 <div className='HomeInnerContainer'>
                     <div className='banner'>
-                        <div className='HomeDynamicTitle'>One<span style={{ fontSize: '135px' }}>:</span><span style={{ color: 'white' }}>AI</span>
+                        <div className='HomeDynamicTitle'>One<span style={{ fontSize: '200px' }}>:</span><span style={{ color: 'white' }}>AI</span>
 
                         </div>   <div className=' byLine' >             hyper optimize junior developers
                         </div>
@@ -118,9 +114,11 @@ const Home = () => {
 
 
                             <div className='mainParagraph'><span className='center red title'>Welcome to One:AI</span>
-                                <br /> A hyper efficient onbarding tool for junior developers.
-                                Here you will find the best methods to maximize the efficieny
+                                <br /> An enterprise level onbarding tool for junior developers.
+                                Here you will find the best methods to maximize the efficiency
                                 of your newly recruited team members</div>
+
+                        <div className='center main_title red'>Our Tools</div>
 
                             <div className='HomeContainerGrid'>
                                 {homeGamesArray?.length > 0 && <div
@@ -133,11 +131,6 @@ const Home = () => {
                                 </div>}
                             </div>
 
-
-
-                            {/* <Pagination left={{ src: leftPaginate.src, title: leftPaginate.title }} right={{ src: rightPaginate.src, title: rightPaginate.title }}
-                                index={indexRef.current} gameArrayLength={homeGamesArrayTotalLength}
-                                fatherPagination={pagination} /> */}
                             <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
                         </>}
                 </div>
