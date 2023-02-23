@@ -4,9 +4,26 @@ import './PopUp.css'
 import { changePopUpStatus } from '../../store/gameSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import { shorten } from '../../utils/functions';
+import ImageGallery from 'react-image-gallery';
+
 
 
 const PopUp = () => {
+
+    const images = [
+        {
+            original: 'https://picsum.photos/id/1018/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1019/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        },
+    ];
 
     const { back, link } = logos
     const disptach = useDispatch()
@@ -24,6 +41,7 @@ const PopUp = () => {
     return (
         <div className='popUp'>
             <div className='upperPopUpContent'>
+                {/* <ImageGallery items={images} />; */}
                 <img
                     className='popUpImage'
                     src={thumbnail}

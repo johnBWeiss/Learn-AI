@@ -7,6 +7,7 @@ const initialState = {
     popUpData: {},
     homeGamesArray: [],
     homeGamesArrayTotalLength: 0,
+    pageDetails:{title:'',byLine:'',secondTitle:'',paragraph:'',},
     homeGamesArrayTitle: 'All Games',
     gameOptions: {
         method: 'GET',
@@ -60,6 +61,9 @@ export const gameSlice = createSlice({
                     dynamicTitle = 'Fighting' : dynamicTitle = payload.params.category
             }
             state.homeGamesArrayTitle = dynamicTitle
+        },
+        pageDetails: (state, { payload }) => {
+            state.pageDetails=payload
         }
     },
 
@@ -89,7 +93,8 @@ export const {
 
     changeOptions,
     changePopUpStatus,
-    errorHandler
+    errorHandler,
+    pageDetails
 
 } = gameSlice.actions;
 
