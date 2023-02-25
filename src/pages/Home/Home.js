@@ -8,9 +8,9 @@ import logos from '../../assets/logos/logoController';
 import PopUp from '../../components/PopUp/PopUp';
 import topScroll from '../../assets/images/topScroll.png';
 import senior from "../../assets/images/backgroundAI2.jpg"
-import data from "../../assets/images/data.png"
-import abstract from '../../assets/images/abstractCode.jpg'
-import scribe from "../../assets/images/scribe.jpg"
+import data from "../../assets/images/back-3.jpg"
+import abstract from '../../assets/images/back-1.jpg'
+import scribe from "../../assets/images/back-2.jpg"
 
 
 const Home = () => {
@@ -109,7 +109,6 @@ const Home = () => {
                             <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
                         </>}
                 </div>
-                {/* <SideNav resetReffHandler={resetReffFatherHandler} /> */}
             </div >}
             {showPopUp && <PopUp />}
         </>);

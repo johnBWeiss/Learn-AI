@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changePopUpStatus, pageDetails } from '../../store/gameSlice'
 import { shorten } from '../../utils/functions';
@@ -12,15 +12,26 @@ const HomeSingleItem = ({ data }) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
+  // useEffect(() => {
+  //   dispatch(pageDetails({
+  //     title, backgroundImage: thumbnail, byLine: release_date,
+  //     secondTitle: '', paragraph: '',
+  //     dividercolor: ''
+  //   }))
+  //   return () => {
+  //     second
+  //   }
+  // }, [third])
 
-  // the shorten function recives texts and slices them according to dynamic values.
-  let shortenedTitle = shorten(title, 19)
-  let shortenedPublisher = shorten(publisher, 19)
 
-  // the PopUpHandler function updates the state so the popup will show, along with the correct data 
+
   const popUpHandler = () => {
     // disptach(changePopUpStatus(data))
-    dispatch(pageDetails({ title }))
+    dispatch(pageDetails({
+      title, backgroundImage: thumbnail, byLine: release_date,
+      secondTitle: 'testiing', paragraph: 'this is grat',
+      dividercolor: 'red'
+    }))
     navigate(`/details`)
   }
 
@@ -37,13 +48,13 @@ const HomeSingleItem = ({ data }) => {
       <div
         className='vertFlex itemDetailsContainer' onClick={() => popUpHandler()}>
         <div className='itemTitleMore'>
-          {shortenedTitle}
+          {title}
         </div>
         <div>
           {release_date}
         </div>
         <div>
-          {shortenedPublisher}
+          {/* {shortenedPublisher} */}
         </div>
       </div>
     </div>
