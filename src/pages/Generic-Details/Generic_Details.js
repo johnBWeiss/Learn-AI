@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-// import './Home.css';
+import './Generic_Details.css';
 import { useDispatch, useSelector } from 'react-redux';
-import {  gameSelector } from '../../store/gameSlice';
+import { gameSelector } from '../../store/gameSlice';
+import { useNavigate } from 'react-router';
 
 import PopUp from '../../components/PopUp/PopUp';
 import topScroll from '../../assets/images/topScroll.png';
@@ -10,14 +11,18 @@ import topScroll from '../../assets/images/topScroll.png';
 
 const Generic_Details = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate()
+
     const gameSlice = useSelector(gameSelector);
-    const {  pending, showPopUp } = gameSlice;
-    console.log(gameSlice);
+    const { showPopUp } = gameSlice;
 
 
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-        
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        // gameSlice?.pageDetails?.backgroundImage? navigate('/') : null
+        if (!gameSlice?.pageDetails?.backgroundImage) {
+            navigate('/')
+        }
     }, [])
 
 
@@ -31,27 +36,25 @@ const Generic_Details = () => {
             {!showPopUp && <div className='HomeContainer'>
                 <div className='HomeInnerContainer'>
                     <div className='banner'>
-                        <div className='HomeDynamicTitle'> {gameSlice.pageDetails.title}
+                        <div className='genericTitle'> {gameSlice.pageDetails.title}
 
                         </div>   <div className=' byLine' >
                             {gameSlice.pageDetails.byLine}
                         </div>
                     </div>
-                    {!pending &&
-                        <>
-
-
-                        <div className='mainParagraph' style={{ backgroundColor: gameSlice.pageDetails.dividerColor }}><span className='center red title'> {gameSlice.pageDetails.secondTitle}</span>
-                                <br /> { } {gameSlice.pageDetails.paragraph}</div>
-
-                            <div className='center main_title red'>Prompt Examples</div>
 
 
 
-                            <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
-                        </>}
+                    <div className='mainParagraph' style={{ backgroundColor: gameSlice.pageDetails.dividerColor }}><span className='center red title'> {gameSlice.pageDetails.secondTitle}</span>
+                        <br /> { } {gameSlice.pageDetails.paragraph}</div>
+
+                    <div className='center main_title red'>Prompt Examples</div>
+
+
+
+                    <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
+
                 </div>
-                {/* <SideNav resetReffHandler={resetReffFatherHandler} /> */}
             </div >}
             {showPopUp && <PopUp />}
         </>);

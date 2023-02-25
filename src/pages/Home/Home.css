@@ -1,3 +1,9 @@
+.colors{
+  color:rgb(182, 249, 255)
+}
+
+
+
 .HomeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,10 +67,12 @@
 
 .byLine {
   font-size: 50px;
+  margin: 0 auto;
   margin-bottom: 50px;
   color: white;
   font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
     sans-serif;
+  text-align: center;
 }
 .HomeContainerGrid {
   display: -webkit-box;
@@ -109,7 +117,7 @@
   font-size: 40px;
   /* max-width: 1200px; */
 
-  padding: 15% 10%;
+  padding: 13% 10%;
   min-height: 100vh;
   line-height: 2;
   box-sizing: border-box;

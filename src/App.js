@@ -11,7 +11,6 @@ console.log(gameSelector);
 
 const App = () => {
   const state = useSelector(gameSelector);
-  console.log(state?.pageDetails.backgroundImage ?? background);
 
   return (
     <div className="app">

@@ -8,29 +8,26 @@ import './HomeSingleItem.css';
 const HomeSingleItem = ({ data }) => {
 
 
-  const { title, thumbnail, release_date, publisher, pageName } = data
+  const { title, thumbnail, release_date, paragraph, secondTitle, backgroundImage, dividerColor } = data
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   dispatch(pageDetails({
-  //     title, backgroundImage: thumbnail, byLine: release_date,
-  //     secondTitle: '', paragraph: '',
-  //     dividercolor: ''
-  //   }))
-  //   return () => {
-  //     second
-  //   }
-  // }, [third])
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // gameSlice?.pageDetails?.backgroundImage? navigate('/') : null
+    if (!backgroundImage) {
+      navigate('/')
+    }
+  }, [])
 
 
   const popUpHandler = () => {
     // disptach(changePopUpStatus(data))
     dispatch(pageDetails({
       title, backgroundImage: thumbnail, byLine: release_date,
-      secondTitle: 'testiing', paragraph: 'this is grat',
-      dividercolor: 'red'
+      secondTitle, paragraph,
+      dividerColor
     }))
     navigate(`/details`)
   }

@@ -47,8 +47,8 @@ html {
   left: 0px;
   top: 0px;
   /* animation: Roll infinite 7000s; */
-  /* padding-top: 500px; */
-  opacity: 0.5;
+  /* padding-top: 0px; */
+  opacity: 0.3;
 }
 
 @keyframes Roll {
@@ -73,6 +73,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .red {
@@ -87,4 +88,5 @@ html {
 .main_title {
   font-size: 120px;
   font-family: "Ailerons-Typeface";
+  margin-bottom:90px
 }
