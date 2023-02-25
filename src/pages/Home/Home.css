@@ -1,16 +1,16 @@
-.colors{
-  color:rgb(182, 249, 255)
+.colors {
+  color: rgb(182, 249, 255);
 }
-
-
+.snakeEyes {
+  font-size: 200px;
+}
 
 .HomeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+
+  justify-content: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -161,21 +161,22 @@
 @media (max-width: 1489px) {
   .HomeInnerGrid {
     -ms-grid-columns: 300px 30px 300px 30px 300px;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 360px);
   }
 }
-@media (max-width: 1166px) {
+@media (max-width: 1340px) {
   .HomeInnerGrid {
     -ms-grid-columns: 400px 40px 400px;
-    grid-template-columns: repeat(2, 400px);
-    grid-gap: 40px 40px;
+    grid-template-columns: repeat(2, 480px);
+    grid-gap: 60px 60px;
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1120px) {
   .HomeInnerGrid {
-    -ms-grid-columns: 370px;
-    grid-template-columns: 370px;
+      grid-template-columns: repeat(2, 380px);
+      grid-gap:36px 36px
+
   }
   .HomeDynamicTitle {
     font-size: 140px;
@@ -185,15 +186,16 @@
   .HomeDynamicTitle {
     font-size: 110px;
   }
-  .HomeInnerGrid {
+  /* .HomeInnerGrid {
     -ms-grid-columns: 350px;
     grid-template-columns: 350px;
-  }
+  } */
 }
-@media (max-width: 766px) {
+@media (max-width: 873px) {
   .HomeInnerGrid {
-    -ms-grid-columns: 300px;
-    grid-template-columns: 300px;
+    grid-template-columns: 375px;
+      grid-gap:36px 36px
+  
   }
 }
 
@@ -211,10 +213,10 @@
 }
 
 @media (max-width: 550px) {
-  .HomeInnerGrid {
+  /* .HomeInnerGrid {
     -ms-grid-columns: 230px;
     grid-template-columns: 230px;
-  }
+  } */
   .HomeDynamicTitle {
     font-size: 75px;
     margin-top: 50px;
@@ -234,24 +236,42 @@
   }
 }
 
-@media (max-width: 417px) {
+@media (max-width:1024px) {
   .HomeInnerGrid {
-    -ms-grid-columns: 220px;
-    grid-template-columns: 220px;
+    /* -ms-grid-columns: 90%;
+    grid-template-columns: 90%; */
   }
   .HomeDynamicTitle {
-    font-size: 52px;
+    font-size: 90px;
+    margin-bottom:10px
+  }
+  .title,.main_title {
+    font-size: 39px;
+    line-height: 1.3;
+  }
+  .byLine {
+    font-size: 26px;
+    width: 70%;
+  }
+
+  .snakeEyes {
+    font-size: 70px;
   }
 
   .indexCurrent {
     font-size: 26px;
   }
+
+  .mainParagraph {
+    font-size: 20px;
+    margin-bottom:70px
+  }
 }
 @media (max-width: 370px) {
-  .HomeInnerGrid {
+  /* .HomeInnerGrid {
     -ms-grid-columns: 200px;
     grid-template-columns: 200px;
-  }
+  } */
 }
 @media (max-width: 340px) {
   .HomeDynamicTitle {

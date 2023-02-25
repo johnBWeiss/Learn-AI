@@ -24,6 +24,8 @@ const Home = () => {
             dividerColor: 'rgb(255, 234, 234)',
             release_date: 'AI generated code review',
             span: 'span 2',
+            navTitle: 'mobile-senior',
+
             byLine: 'save expenses with an AI powered mentor',
             secondTitle: 'Fast track your junior to senior',
             paragraph: `A junior developer needs to be mentored constantly
@@ -37,6 +39,8 @@ const Home = () => {
             thumbnail: abstract,
             release_date: 'Refactor your code to perfection',
             dividerColor: 'rgb(182, 249, 255)',
+            navTitle: 'code-enhancement',
+
 
 
             // byLine: 'save expenses with an AI powered mentor',
@@ -51,6 +55,8 @@ const Home = () => {
         {
             title: 'Content Scribe',
             thumbnail: scribe,
+            navTitle: 'content-scribe',
+
             release_date: 'Generate production grade content ',
             secondTitle: 'Beautify your content',
             paragraph: `Every app needs quality content, which isn't easy to write on your own. With One Ai, you
@@ -59,6 +65,8 @@ const Home = () => {
         },
         {
             title: 'Team Alignment',
+            navTitle: 'team-alignment',
+
             thumbnail: back5,
             release_date: 'Conform your code to team principles',
             secondTitle: 'unify your codebase',
@@ -70,6 +78,8 @@ const Home = () => {
         {
             title: 'Math Reducer',
             thumbnail: data,
+            navTitle: 'math-reducer',
+
             release_date: 'Simplify complex data visualization',
             secondTitle: 'create stunning data visualization',
             paragraph: `building data bisulization dashboards is no east feat. The svg centric animations are difficult and rewuire deep knowledge
@@ -79,6 +89,7 @@ const Home = () => {
         },
         {
             title: 'Private Tutor',
+            navTitle:'private-tutor',
             thumbnail: back4,
             release_date: 'Personilize your learning experience',
             secondTitle: 'improve learning efficiency',
@@ -108,12 +119,12 @@ const Home = () => {
             {!showPopUp && <div className='HomeContainer'>
                 <div className='HomeInnerContainer'>
                     <div className='banner'>
-                        <div className='HomeDynamicTitle'>One<span style={{ fontSize: '200px' }}>:</span><span style={{ color: 'white' }}>AI</span>
+                        <div className='HomeDynamicTitle'>One<span className='snakeEyes' >:</span><span style={{ color: 'white' }}>AI</span>
 
                         </div>   <div className=' byLine' >             hyper optimize junior developers
                         </div>
                     </div>
-                    <div className='mainParagraph'><span className='center red title'>Welcome to One:AI</span>
+                    <div className='mainParagraph'><span className='center red title'>Welcome to One AI</span>
                         <br /> An enterprise level onboarding tool for junior developers.
                         Here you will find the best methods to maximize the efficiency
                         of your newly recruited team members</div>

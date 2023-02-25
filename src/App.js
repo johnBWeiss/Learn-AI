@@ -21,7 +21,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/details" element={state?.pageDetails.backgroundImage ? <GenericDetails /> : <Home />} />
+          <Route exact path={`/details/:${state?.pageDetails.navTitle}`} element={state?.pageDetails.backgroundImage ? <GenericDetails /> : <Home />} />
         </Routes>
       </Router>
     </div>

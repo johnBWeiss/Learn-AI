@@ -8,7 +8,7 @@ import './HomeSingleItem.css';
 const HomeSingleItem = ({ data }) => {
 
 
-  const { title, thumbnail, release_date, paragraph, secondTitle, backgroundImage, dividerColor } = data
+  const { title, thumbnail, release_date, paragraph, secondTitle, backgroundImage, dividerColor, navTitle } = data
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -29,7 +29,7 @@ const HomeSingleItem = ({ data }) => {
       secondTitle, paragraph,
       dividerColor
     }))
-    navigate(`/details`)
+    navigate(`/details/${navTitle}`)
   }
 
   return (
