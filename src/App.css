@@ -88,5 +88,11 @@ html {
 .main_title {
   font-size: 120px;
   font-family: "Ailerons-Typeface";
-  margin-bottom:90px
+  margin-bottom: 90px;
+}
+
+@media (max-width: 747px) {
+  .background {
+    padding-top: 0px;
+  }
 }
