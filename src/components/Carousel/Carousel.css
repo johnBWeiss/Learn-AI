@@ -72,6 +72,14 @@
 }
 /* //   carousel-container
 // react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px */
+.carouselImage{
+    width:65vw;
+    object-fit: cover;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
 
 @media (min-width: 2050px) {
   .react-multiple-carousel__arrow--right {
@@ -80,4 +88,11 @@
   .react-multiple-carousel__arrow--left {
     left: 14%;
   }
+}
+@media (max-width: 747px) {
+.carouselImage{
+    width:79vw;
+  
+
+}
 }

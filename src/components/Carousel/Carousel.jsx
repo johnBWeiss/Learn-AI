@@ -80,8 +80,9 @@ const CarouselLib = () => {
               src={v.src}
               alt="logo"
               height="500px"
-              width={"100%"}
-              style={{ objectFit: "cover",borderRadius:'30px',cursor:'pointer' }}
+            //   width={"75vw"}
+            className="carouselImage"
+            //   style={{ width:'65vw',objectFit: "cover",borderRadius:'30px',cursor:'pointer' }}
               onClick={  ''
                 //   dispatch(changePopUpStatus({thumbnail:v.src}))
 }
