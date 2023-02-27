@@ -6,7 +6,12 @@ import a from "../../assets/images/back-3.jpg";
 import b from "../../assets/images/back-4.jpg";
 import c from "../../assets/images/back-5.jpg";
 import "./Carousel.css";
+import { changePopUpStatus } from "../../store/gameSlice";
+import { useDispatch } from "react-redux";
+
 const CarouselLib = () => {
+      const dispatch = useDispatch();
+
   const carouselItems = [
     {
       src: "../../assets/images/back-1.jpg",
@@ -77,7 +82,9 @@ const CarouselLib = () => {
               height="500px"
               width={"100%"}
               style={{ objectFit: "cover",borderRadius:'30px',cursor:'pointer' }}
-              onClick={''}
+              onClick={  ''
+                //   dispatch(changePopUpStatus({thumbnail:v.src}))
+}
             />
             {/* <div>{v.text}</div> */}
           </div>

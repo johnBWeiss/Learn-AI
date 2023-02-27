@@ -13,6 +13,16 @@
   color: rgb(200, 60, 60);
 }
 
+.genericByLine {
+  font-size: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+}
+
 
 @media (max-width: 1024px) {
  
@@ -21,6 +31,15 @@
     margin-bottom: 30px;
     margin:14px auto
   }
+  .genericByLine {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+}
 
 
   

@@ -38,7 +38,7 @@ const Generic_Details = () => {
                     <div className='banner'>
                         <div className='genericTitle'> {gameSlice.pageDetails.title}
 
-                        </div>   <div className=' byLine' >
+                        </div>   <div className=' genericByLine' >
                             {gameSlice.pageDetails.byLine}
                         </div>
                     </div>
