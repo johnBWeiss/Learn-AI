@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router';
 
 import PopUp from '../../components/PopUp/PopUp';
 import topScroll from '../../assets/images/topScroll.png';
-
+import CarouselLib from '../../components/Carousel/Carousel';
 
 
 const Generic_Details = () => {
@@ -50,8 +50,7 @@ const Generic_Details = () => {
 
                     <div className='center main_title red'>Prompt Examples</div>
 
-
-
+                    <CarouselLib></CarouselLib>
                     <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
 
                 </div>

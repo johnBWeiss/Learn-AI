@@ -1,0 +1,83 @@
+.CarouselLibContainer {
+  /* transform: translateY(372px); */
+  /* @include containerWidth; */
+  margin: 0 auto;
+  width: 100%;
+  transition: all 1s;
+  position: relative;
+  margin-bottom: 160px;
+  /* background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(196, 196, 196, 0) 44%
+  ); */
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* height: 144px; */
+}
+.react-multi-carousel-track {
+  transition: 0.5s !important;
+}
+
+.carousel-container,
+.react-multi-carousel-list {
+  /* padding-right: 100px !important; */
+  transition: all 1s;
+}
+
+.react-multi-carousel-list {
+  position: static;
+  align-self: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 79%;
+  transition: all 1s;
+}
+.react-multi-carousel-dot-list {
+  transition: all 1s;
+  bottom: -70px;
+
+  /* display: none; */
+}
+.react-multi-carousel-item,
+.carousel-item-padding-40-px,
+.react-multi-carousel-item--active {
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.containerItem {
+  width: 140px;
+  transition: all 1s;
+  cursor: pointer;
+
+}
+
+
+
+.react-multiple-carousel__arrow--right {
+  background: rgba(0, 0, 0, 0) !important;
+  position: absolute;
+  right: 12%;
+}
+.react-multiple-carousel__arrow--left {
+  background: rgba(0, 0, 0, 0) !important;
+  position: absolute;
+  left: 12%;
+}
+.react-multiple-carousel__arrow::before {
+  /* color: $blue !important; */
+  font-weight: 900;
+  font-size: 30px;
+}
+/* //   carousel-container
+// react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px */
+
+@media (min-width: 2050px) {
+  .react-multiple-carousel__arrow--right {
+    right: 14%;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 14%;
+  }
+}
