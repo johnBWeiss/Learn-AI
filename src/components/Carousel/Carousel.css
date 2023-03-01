@@ -50,10 +50,7 @@
   width: 140px;
   transition: all 1s;
   cursor: pointer;
-
 }
-
-
 
 .react-multiple-carousel__arrow--right {
   background: rgba(0, 0, 0, 0) !important;
@@ -72,14 +69,13 @@
 }
 /* //   carousel-container
 // react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px */
-.carouselImage{
-    width:65vw;
-    object-fit: cover;
-    border-radius: 30px;
-    cursor: pointer;
-
+.carouselImage {
+  height: 65vw;
+  max-width: 65vw;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
 }
-
 
 @media (min-width: 2050px) {
   .react-multiple-carousel__arrow--right {
@@ -90,9 +86,7 @@
   }
 }
 @media (max-width: 747px) {
-.carouselImage{
-    width:79vw;
-  
-
-}
+  .carouselImage {
+    width: 79vw;
+  }
 }
