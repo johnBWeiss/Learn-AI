@@ -90,6 +90,12 @@ html {
   font-family: "Ailerons-Typeface";
   margin-bottom: 90px;
 }
+.true-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 @media (max-width: 747px) {
   .background {

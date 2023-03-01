@@ -7,6 +7,7 @@ import LandingPage from './pages/Landing Page/LandingPage';
 import GenericDetails from './pages/Generic-Details/Generic_Details';
 import { gameSelector } from './store/gameSlice';
 import { useSelector } from 'react-redux';
+import EnlargedImage from './pages/Enlarged_Image';
 console.log(gameSelector);
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path={`/details/:${state?.pageDetails.navTitle}`} element={state?.pageDetails.backgroundImage ? <GenericDetails /> : <Home />} />
+          {/* <Route exact path={`/image-details`} element={<EnlargedImage /> } /> */}
+          <Route exact path={`/image-details`} element={state?.pageDetails.backgroundImage ? <EnlargedImage /> : <Home />} />
         </Routes>
       </Router>
     </div>

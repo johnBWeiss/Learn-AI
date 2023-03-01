@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changePopUpStatus, pageDetails } from '../../store/gameSlice'
-import { shorten } from '../../utils/functions';
+
 import { useNavigate } from 'react-router';
 import './HomeSingleItem.css';
 
 const HomeSingleItem = ({ data }) => {
 
 
-  const { title, thumbnail, release_date, paragraph, secondTitle, backgroundImage, dividerColor, navTitle } = data
+  const { title, thumbnail, release_date,
+     paragraph, secondTitle, backgroundImage,
+      dividerColor, navTitle } = data
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -27,9 +29,10 @@ const HomeSingleItem = ({ data }) => {
     dispatch(pageDetails({
       title, backgroundImage: thumbnail, byLine: release_date,
       secondTitle, paragraph,
-      dividerColor
+      dividerColor,navTitle
     }))
     navigate(`/details/${navTitle}`)
+    console.log('why not working');
   }
 
   return (

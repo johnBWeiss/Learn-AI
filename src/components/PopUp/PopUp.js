@@ -10,23 +10,10 @@ import ImageGallery from 'react-image-gallery';
 
 const PopUp = () => {
 
-    const images = [
-        {
-            original: 'https://picsum.photos/id/1018/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1018/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-    ];
+
 
     const { back, link } = logos
-    const disptach = useDispatch()
+    const dispatch = useDispatch()
     const popUpData = useSelector((state) => state.gameSlice.popUpData)
     const { title, thumbnail, release_date, publisher, short_description, game_url } = popUpData
 
@@ -35,7 +22,7 @@ const PopUp = () => {
 
 
     const popUpHandler = () => {
-        disptach(changePopUpStatus({}))
+        dispatch(changePopUpStatus({}))
     }
 
     return (
