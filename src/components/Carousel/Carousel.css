@@ -70,8 +70,8 @@
 /* //   carousel-container
 // react-multi-carousel-item react-multi-carousel-item--active carousel-item-padding-40-px */
 .carouselImage {
-  height: 65vw;
-  max-width: 65vw;
+  height: 45vw;
+  width: 65vw;
   object-fit: cover;
   border-radius: 30px;
   cursor: pointer;
