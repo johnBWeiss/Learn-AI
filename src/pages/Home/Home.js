@@ -99,7 +99,7 @@ const Home = ({ location }) => {
             secondTitle: 'improve learning efficiency',
             paragraph: `As a junior developer, a considerable amount of time is typically spent on learning. 
             
-          `, paragraph2: `This process can be accelerated by utilizing an AI tool that can provide answers to highly specific questions tailored to your immediate needs, and incorporating your own code.`
+          `, paragraph2: `This process can be accelerated by utilizing an AI tool that can provide answers to highly specific questions tailored to your immediate needs, while incorporating your own code in the process.`
         }
 
     ]
