@@ -34,7 +34,7 @@
   -webkit-box-shadow: 0px 3px 6px #00000029;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
-  height: 100%!important;
+  height: 100% !important;
   border: 1px solid white;
 }
 
@@ -52,7 +52,7 @@
   object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 80%!important;
+  height: 80% !important;
 }
 
 .itemTitleMore {
@@ -64,11 +64,10 @@
 }
 
 @media (max-width: 1366px) {
-.galleryContainer{
-  height: 300px;
+  .galleryContainer {
+    height: 300px;
+  }
 }
-}
-
 
 @media (max-width: 1166px) {
   .HomeSingleItemImage {
@@ -98,7 +97,7 @@
   .itemDetailsContainer {
     font-size: 28px;
   }
-  .galleryContainer{
+  .galleryContainer {
     /* height: 500px; */
   }
 }

@@ -15,30 +15,28 @@ import back5 from "../../assets/images/back-5.jpg"
 
 
 const Home = ({ location }) => {
-    console.log(location);
 
 
 
     const dispatch = useDispatch();
-    const gameSlice = useSelector(gameSelector);
-    const { showPopUp } = gameSlice;
+
     let homeGamesArray = [
         {
             title: 'Code Review',
             thumbnail: senior,
             dividerColor: 'rgb(255, 234, 234)',
-            release_date: 'AI generated senior mentor',
+            release_date: 'AI generated mentor',
             span: 'span 2',
             navTitle: 'mobile-senior',
 
-            byLine: 'save expenses with an AI powered mentor',
-            secondTitle: 'Fast track your juniors onboarding process',
-            paragraph: `A junior developer needs to be mentored constantly
-             for a long period of time before he can pull his own weight. His code can be messy, unconformed to the teams guidlines and conventions, and utterly unscalable and unreadable. In face, it can be said in some caes that a junior debeloper left unchecked can cause more harm than good.
-              This can get expensive fast,
-             as a senior is required to step away from his assignments for the sake of mentoring. Enter One AI, an innovative tool built to hone your coding skills, catch your mistakes, and refactor your code to fut seamleslly with the team.
-              
-      `  },
+            byLine: 'Save expenses with an AI powered mentor',
+            secondTitle: `Accelerate the onboarding process`,
+            paragraph: `Most junior developers need constant mentoring,
+             but their seniors can only spare precious few sessions for them.
+              `,
+            paragraph2: ` Our advanced AI solution provides a comprehensive approach to improving coding abilities, detecting errors, and aligning code with team standards. `
+            , paragraph3: `This product can allow senior developers to concentrate on their 
+            own tasks while the AI technology assists in mentoring, saving a considerable amount of time and money` },
         //     {
         //         title: 'Code Enhancement',
         //         thumbnail: abstract,
@@ -62,12 +60,12 @@ const Home = ({ location }) => {
             thumbnail: back5,
             navTitle: 'content-generator',
 
-            release_date: 'create production-grade content ',
-            secondTitle: 'Beautify your content',
-            paragraph: `Every app needs quality content, which isn't easy to write on your own. With One Ai, you
-            can save time and effort by utilizing our platform to generate high quality content quickly, on any subject in the world.
+            release_date: 'Create production-grade content ',
+            secondTitle: 'Content generation made easy',
+            paragraph: `Composing quality content for an app can be challenging to accomplish independently.
+              `, paragraph2: `However, One Ai provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
            
-          `
+         `
         },
         // {
         //     title: 'Team Alignment',
@@ -87,11 +85,11 @@ const Home = ({ location }) => {
             navTitle: 'math-compiler',
 
             release_date: 'Simplify complex data visualization',
-            secondTitle: 'create stunning data visualization',
-            paragraph: `building data visulization dashboards is no east feat. The svg-centric animations are difficult and require deep knowledge
-            of math principles to pull of consistently. With one AI, you can have your calculations carried for you in seconds, 
-            saving you a significant amount of time and effort.
-          `
+            secondTitle: 'create stunning dashboards',
+            paragraph: `Developing data visualization dashboards can be a formidable challenge that demands a significant amount of expertise and resources.
+              `, paragraph2: `The SVG-centric animations used in these dashboards require in-depth mathematical knowledge to create and maintain consistently. 
+            `, paragraph3: `   With One AI, you can eliminate the need for specialized skills and free up valuable resources, allowing you to focus on other critical aspects of your project.
+        `
         },
         {
             title: 'Private Tutor',
@@ -99,10 +97,9 @@ const Home = ({ location }) => {
             thumbnail: abstract,
             release_date: 'Personilize your learning experience',
             secondTitle: 'improve learning efficiency',
-            paragraph: `Being a junior developer means devoting most of your day to learning. 
-            Expedite this process
-            by having an AI tool that can answer extremly specific questions regarding your immedsite needs and taking into account your own code.
-          `
+            paragraph: `As a junior developer, a considerable amount of time is typically spent on learning. 
+            
+          `, paragraph2: `This process can be accelerated by utilizing an AI tool that can provide answers to highly specific questions tailored to your immediate needs, and incorporating your own code.`
         }
 
     ]
@@ -116,10 +113,7 @@ const Home = ({ location }) => {
 
         }))
     }, [])
-    useEffect(() => {
-        const test = location?.state && location?.state?.message;
-        console.log(test);
-    }, [location])
+
 
 
     return (
@@ -134,9 +128,7 @@ const Home = ({ location }) => {
                         </div>
                     </div>
                     <div className='mainParagraph'><span className='center red title'>Welcome to One AI</span>
-                        <br /> An enterprise level onboarding tool for junior developers.
-                        Here you will find the best methods to maximize the efficiency
-                        of your newly recruited team members</div>
+                        <br /> Our enterprise-level onboarding tool for junior developers is designed to optimize the efficiency of your newly recruited team members. With this tool, you can access the most effective methods to enhance the onboarding process, ensuring that your team members can quickly and efficiently integrate into your organization.</div>
                     {data}
 
                     <div className='center main_title red'>Our Tools</div>

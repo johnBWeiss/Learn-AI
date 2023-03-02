@@ -8,7 +8,6 @@ import GenericDetails from './pages/Generic-Details/Generic_Details';
 import { gameSelector } from './store/gameSlice';
 import { useSelector } from 'react-redux';
 import EnlargedImage from './pages/Enlarged_Image';
-console.log(gameSelector);
 
 const App = () => {
   const state = useSelector(gameSelector);

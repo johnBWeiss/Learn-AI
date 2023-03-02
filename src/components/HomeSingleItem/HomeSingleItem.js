@@ -9,8 +9,8 @@ const HomeSingleItem = ({ data }) => {
 
 
   const { title, thumbnail, release_date,
-     paragraph, secondTitle, backgroundImage,
-      dividerColor, navTitle } = data
+    paragraph, paragraph2 ,paragraph3,secondTitle, backgroundImage,
+    dividerColor, navTitle } = data
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -29,10 +29,9 @@ const HomeSingleItem = ({ data }) => {
     dispatch(pageDetails({
       title, backgroundImage: thumbnail, byLine: release_date,
       secondTitle, paragraph,
-      dividerColor,navTitle
+      dividerColor, navTitle, paragraph2, paragraph3
     }))
     navigate(`/details/${navTitle}`)
-    console.log('why not working');
   }
 
   return (

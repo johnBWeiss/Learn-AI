@@ -87,6 +87,9 @@
 }
 @media (max-width: 747px) {
   .carouselImage {
-    width: 79vw;
+    width: 73vw;
+  }
+  .react-multiple-carousel__arrow::before {
+    display: none;
   }
 }

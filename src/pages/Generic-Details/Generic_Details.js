@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Generic_Details.css';
 import { useSelector } from 'react-redux';
 import { gameSelector } from '../../store/gameSlice';
@@ -56,19 +56,19 @@ const Generic_Details = () => {
         }
 
         if (gameSlice.pageDetails.navTitle === 'math-compiler') {
-            setImageArray (mathArray)
+            setImageArray(mathArray)
         }
 
         if (gameSlice.pageDetails.navTitle === 'private-tutor') {
-            setImageArray (tutorArray)
+            setImageArray(tutorArray)
         }
 
         if (gameSlice.pageDetails.navTitle === 'mobile-senior') {
-            setImageArray (senior)
+            setImageArray(senior)
         }
 
         if (gameSlice.pageDetails.navTitle === 'content-generator') {
-            setImageArray (content)
+            setImageArray(content)
         }
 
 
@@ -90,7 +90,6 @@ const Generic_Details = () => {
 
 
     // ]
-    console.log(gameSlice.pageDetails.navTitle);
 
 
 
@@ -113,7 +112,10 @@ const Generic_Details = () => {
 
 
                     <div className='mainParagraph' style={{ backgroundColor: gameSlice.pageDetails.dividerColor }}><span className='center red title'> {gameSlice.pageDetails.secondTitle}</span>
-                        <br /> { } {gameSlice?.pageDetails?.paragraph}</div>
+                        <br /> { } {gameSlice?.pageDetails?.paragraph} <br></br><br />
+                        <div>{gameSlice?.pageDetails?.paragraph2}</div><br />
+                        {gameSlice?.pageDetails?.paragraph3}</div>
+
 
                     <div className='center main_title red'>Prompt Examples</div>
 

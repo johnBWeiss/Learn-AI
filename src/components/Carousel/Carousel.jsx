@@ -7,15 +7,6 @@ import "./Carousel.css";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 
-// const CarouselLib = ({ imgArray }) => {
-//   console.log(imgArray);
-//   const navigate = useNavigate();
-//   const handleClick = (src, path) => {
-//     navigate({
-//       pathname: "/image-details",
-//       search: createSearchParams({ id: src, path }).toString(),
-//     });
-//   };
 const shuffleArray = (array) => {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -26,7 +17,6 @@ const shuffleArray = (array) => {
 };
 
 const CarouselLib = ({ imgArray }) => {
-  console.log(imgArray);
   const navigate = useNavigate();
   const handleClick = (src, path) => {
     navigate({
