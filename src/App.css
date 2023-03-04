@@ -97,6 +97,10 @@ html {
   margin: 0 auto;
 }
 
+.enlargedImageBackground{
+  background-image: url('./assets/images/back-4.jpg')!important;
+}
+
 @media (max-width: 747px) {
   .background {
     padding-top: 0px;
