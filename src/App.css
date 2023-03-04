@@ -67,6 +67,11 @@ html {
   --sideBarWidth: 0px !important;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .center {
   margin: 0 auto;
   align-self: center;
@@ -97,12 +102,22 @@ html {
   margin: 0 auto;
 }
 
-.enlargedImageBackground{
-  background-image: url('./assets/images/back-4.jpg')!important;
+.navButton {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 1.5px solid white;
 }
 
 @media (max-width: 747px) {
   .background {
     padding-top: 0px;
+  }
+
+  .navButton {
+    height: 40px;
+    width: 40px;
+    margin-top: 3%;
   }
 }

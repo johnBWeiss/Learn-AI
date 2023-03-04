@@ -8,6 +8,12 @@ import PopUp from '../../components/PopUp/PopUp';
 import topScroll from '../../assets/images/topScroll.png';
 import CarouselLib from '../../components/Carousel/Carousel';
 
+import f1 from '../../assets/images/back-1.jpg'
+import f2 from '../../assets/images/back-3.jpg'
+import f3 from '../../assets/images/back-5.jpg'
+import f4 from '../../assets/images/backgroundAI2.jpg'
+import fhome from '../../assets/images/home.png'
+
 import pt1 from "../../assets/images/private-tutor/pt1.png"
 import pt2 from "../../assets/images/private-tutor/pt2.jpeg"
 import pt3 from "../../assets/images/private-tutor/pt3.jpeg"
@@ -77,28 +83,104 @@ const Generic_Details = () => {
 
 
     return (
-
-        <>
-            {<div className='HomeContainer'>
-                <div className='HomeInnerContainer'>
-                    <div className='banner'>
-                        <div className='genericTitle'> {gameSlice.pageDetails.title}
-
-                        </div>   <div className=' genericByLine' >
-                            {gameSlice?.pageDetails?.byLine}
-                        </div>
-                    </div>
-                    <div className='mainParagraph' style={{ backgroundColor: gameSlice.pageDetails.dividerColor }}><span className='center red title'> {gameSlice.pageDetails.secondTitle}</span>
-                        <br /> { } {gameSlice?.pageDetails?.paragraph} <br></br><br />
-                        <div>{gameSlice?.pageDetails?.paragraph2}</div><br />
-                        {gameSlice?.pageDetails?.paragraph3}</div>
-                    <div className='center main_title red'>Prompt Examples</div>
-                    {imgArray && <CarouselLib imgArray={imgArray}></CarouselLib>
-                    }                    <img src={topScroll} className='topScroll' alt='scroll to top' title='Scroll to top' onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }} />
-
+      <>
+        {
+          <div className="HomeContainer">
+            <div className="HomeInnerContainer">
+              <div className="banner">
+                <div className="genericTitle">
+                  {" "}
+                  {gameSlice.pageDetails.title}
+                </div>{" "}
+                <div className=" genericByLine">
+                  {gameSlice?.pageDetails?.byLine}
                 </div>
-            </div >}
-        </>);
+              </div>
+              <div
+                className="mainParagraph"
+                style={{ backgroundColor: gameSlice.pageDetails.dividerColor }}
+              >
+                <span className="center red title">
+                  {" "}
+                  {gameSlice.pageDetails.secondTitle}
+                </span>
+                <br /> {} {gameSlice?.pageDetails?.paragraph} <br></br>
+                <br />
+                <div>{gameSlice?.pageDetails?.paragraph2}</div>
+                <br />
+                {gameSlice?.pageDetails?.paragraph3}
+              </div>
+              <div className="center main_title red">Prompt Examples</div>
+              {imgArray && <CarouselLib imgArray={imgArray}></CarouselLib>}
+              <div
+                className="space-between"
+                style={{
+                  width: "30vw",
+                  marginBottom: "50px",
+                  minWidth: "400px",
+                }}
+              >
+                <img
+                  src={fhome}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="home"
+                  onClick={() => {
+                    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    navigate("/");
+                  }}
+                />
+                <img
+                  src={f1}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="Scroll to top"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                />
+                <img
+                  src={f2}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="Scroll to top"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                />
+                <img
+                  src={f3}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="Scroll to top"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                />
+                <img
+                  src={f4}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="Scroll to top"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                />
+                <img
+                  src={topScroll}
+                  className="topScroll navButton"
+                  alt="scroll to top"
+                  title="Scroll to top"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        }
+      </>
+    );
 };
 
 export default Generic_Details;

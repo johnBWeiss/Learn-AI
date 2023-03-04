@@ -63,7 +63,7 @@ const Home = ({ location }) => {
             release_date: 'Create production-grade content ',
             secondTitle: 'Content generation made easy',
             paragraph: `Composing quality content for an app can be challenging to accomplish independently.
-              `, paragraph2: `However, One Ai provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
+              `, paragraph2: `One AI provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
            
          `
         },
