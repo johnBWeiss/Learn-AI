@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import './Home.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { gameSelector, pageDetails } from '../../store/gameSlice';
-import PopUp from '../../components/PopUp/PopUp';
+import { useDispatch } from 'react-redux';
+import {  pageDetails } from '../../store/gameSlice';
 import HomeSingleItem from '../../components/HomeSingleItem/HomeSingleItem';
 
 import topScroll from '../../assets/images/topScroll.png';

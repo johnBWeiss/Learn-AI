@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { gameSelector } from "../../store/gameSlice";
 import { useNavigate } from "react-router";
 import { pageDetails } from "../../store/gameSlice";
-import PopUp from "../../components/PopUp/PopUp";
 import topScroll from "../../assets/images/topScroll.png";
 import CarouselLib from "../../components/Carousel/Carousel";
 import { useDispatch } from "react-redux";
@@ -27,14 +26,12 @@ import c1 from "../../assets/images/content/c1.jpeg";
 import c2 from "../../assets/images/content/c2.jpeg";
 import c3 from "../../assets/images/content/c3.jpeg";
 import c4 from "../../assets/images/content/c4.jpeg";
-import c5 from "../../assets/images/content/c5.jpeg";
 
 import m1 from "../../assets/images/math svg/m1.jpeg";
 import m2 from "../../assets/images/math svg/m2.jpeg";
 
 import s1 from "../../assets/images/senior/s1.jpeg";
 import s2 from "../../assets/images/senior/s2.jpeg";
-import s3 from "../../assets/images/senior/s3.jpeg";
 import s4 from "../../assets/images/senior/s4.jpeg";
 import s5 from "../../assets/images/senior/s5.jpeg";
 import s6 from "../../assets/images/senior/s6.jpeg";
@@ -212,7 +209,7 @@ const Generic_Details = () => {
             >
               <img
                 src={fhome}
-                className="topScroll navButton"
+                className="topScroll "
                 alt="scroll to top"
                 title="home"
                 onClick={() => {
@@ -224,7 +221,7 @@ const Generic_Details = () => {
                 src={f4}
                 className="topScroll navButton"
                 alt="scroll to top"
-                title="Scroll to top"
+                title="Code Review"
                 onClick={() => {
                   navHandler(0);
                   //TODO add dispatch pages so it will know what to do
@@ -234,7 +231,7 @@ const Generic_Details = () => {
                 src={f3}
                 className="topScroll navButton"
                 alt="scroll to top"
-                title="Scroll to top"
+                title="Content Generator"
                 onClick={() => {
                   navHandler(1);
                 }}
@@ -243,7 +240,7 @@ const Generic_Details = () => {
                 src={f2}
                 className="topScroll navButton"
                 alt="scroll to top"
-                title="Scroll to top"
+                title="Math Compiler"
                 onClick={() => {
                   navHandler(2);
                 }}
@@ -252,14 +249,14 @@ const Generic_Details = () => {
                 src={f1}
                 className="topScroll navButton"
                 alt="scroll to top"
-                title="Scroll to top"
+                title="Private Tutor"
                 onClick={() => {
                   navHandler(3);
                 }}
               />
               <img
                 src={topScroll}
-                className="topScroll navButton"
+                className="topScroll "
                 alt="scroll to top"
                 title="Scroll to top"
                 onClick={() => {
