@@ -63,6 +63,7 @@
     sans-serif;
 
   color: rgb(200, 60, 60);
+  transform: translateY(-200px);
 }
 
 .byLine {
@@ -73,6 +74,7 @@
   font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
     sans-serif;
   text-align: center;
+  transform: translateY(-200px);
 }
 .HomeContainerGrid {
   display: -webkit-box;
@@ -175,9 +177,9 @@
     grid-template-columns: repeat(2, 380px);
     grid-gap: 36px 36px;
   }
-  .HomeDynamicTitle {
+  /* .HomeDynamicTitle {
     font-size: 140px;
-  }
+  } */
 }
 @media (max-width: 840px) {
   .HomeDynamicTitle {
@@ -222,7 +224,6 @@
     font-size: 75px;
     margin-top: 50px;
   }
-
 }
 
 @media (max-width: 468px) {
@@ -279,8 +280,7 @@
     grid-template-columns: 285px;
   }
 }
-@media (max-width: 340px) {
+/* @media (max-width: 340px) {
   .HomeDynamicTitle {
     font-size: 40px;
-  }
-}
+  } */

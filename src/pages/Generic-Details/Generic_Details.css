@@ -11,6 +11,9 @@
     sans-serif;
 
   color: rgb(200, 60, 60);
+
+  transform: translateY(-100px);
+  text-align: center;
 }
 
 .genericByLine {
@@ -21,49 +24,42 @@
   font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
     sans-serif;
   text-align: center;
+  transform: translateY(-100px);
+  text-align: center;
+  width:92%
 }
-
 
 @media (max-width: 1324px) {
- 
   .genericTitle {
     font-size: 90px;
-   
   }
   .genericByLine {
-  font-size: 40px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  color: white;
-  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
-    sans-serif;
-  text-align: center;
-}
-
-
-  
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+      sans-serif;
+    text-align: center;
+  }
 }
 @media (max-width: 1024px) {
- 
   .genericTitle {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 30px;
-    margin:14px auto
+    margin: 14px auto;
   }
   .genericByLine {
-  font-size: 20px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  color: white;
-  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
-    sans-serif;
-  text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+      sans-serif;
+    text-align: center;
+  }
 }
-
-
-  
-}
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
  .genericTitle {
     font-size: 35px;
   }
@@ -73,8 +69,8 @@
 
   
 }
-}
-@media (max-width: 385px) {
+} */
+/* @media (max-width: 385px) {
   .genericTitle {
     font-size: 30px;
   }
@@ -84,4 +80,4 @@
 
   
 }
-}
+} */
