@@ -15,7 +15,8 @@ const Enlarged_Image = ({ location }) => {
 
     const navigate = useNavigate()
     return (
-        <div style={{ backgroundImage: "url('../assets/images/back-4.jpg')",marginTop:'', height: '90vh', width: '100vw', position: 'fixed', backgroundColor: 'rgb(0,0,0,0.45)', cursor: 'pointer', borderRadius: '20px', flexDirection: 'column' }} className='true-center ' > <img style={{ objectFit: 'contain' }} src={src} height='90%' width='90%' alt='img' />     <img
+        
+        <div style={{ backgroundImage: "url('../assets/images/back-4.jpg')",marginTop:'', height: '100vh', width: '100vw', position: 'fixed', backgroundColor: 'rgb(0,0,0,0.45)', cursor: 'pointer', borderRadius: '20px', flexDirection: 'column' }} className='true-center ' > <img style={{ objectFit: 'contain' }} src={src} height='90%' width='90%' alt='img' />     <img
             src={X}
             className="topScroll "
             style={{transform:'translateY(0px)'}}
