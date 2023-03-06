@@ -4,9 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 
 const Enlarged_Image = ({ location }) => {
     const [data] = useSearchParams()
-    const message = location?.state && location?.state?.message;
     let src = (data.get("id"));
-    let path = (data.get('path'))
 
 
 

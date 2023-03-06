@@ -148,7 +148,6 @@ const Generic_Details = () => {
     { src: s11 },
   ];
   let content = [{ src: c1 }, { src: c2 }, { src: c3 }, { src: c4 }];
-  console.log(gameSlice);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     // gameSlice?.pageDetails?.backgroundImage? navigate('/') : null
@@ -171,7 +170,7 @@ const Generic_Details = () => {
     if (gameSlice.pageDetails.navTitle === "content-generator") {
       setImageArray(content);
     }
-  }, [gameSlice]);
+  }, [content, gameSlice, mathArray, navigate, senior, tutorArray]);
 
   return (
     <>

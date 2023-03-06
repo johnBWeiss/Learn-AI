@@ -21,7 +21,7 @@ const HomeSingleItem = ({ data }) => {
     if (!backgroundImage) {
       navigate('/')
     }
-  }, [])
+  }, [backgroundImage,navigate])
 
 
   const popUpHandler = () => {
