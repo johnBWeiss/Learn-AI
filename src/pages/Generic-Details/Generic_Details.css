@@ -24,6 +24,25 @@
 }
 
 
+@media (max-width: 1324px) {
+ 
+  .genericTitle {
+    font-size: 90px;
+   
+  }
+  .genericByLine {
+  font-size: 40px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+}
+
+
+  
+}
 @media (max-width: 1024px) {
  
   .genericTitle {
@@ -44,11 +63,25 @@
 
   
 }
-@media (max-width: 470px) {
-
-}
-@media (max-width: 340px) {
-  .genericTitle {
-    font-size: 40px;
+@media (max-width: 500px) {
+ .genericTitle {
+    font-size: 35px;
   }
+
+    .genericByLine {
+  font-size: 16px;
+
+  
+}
+}
+@media (max-width: 385px) {
+  .genericTitle {
+    font-size: 30px;
+  }
+
+      .genericByLine {
+  font-size: 14px;
+
+  
+}
 }

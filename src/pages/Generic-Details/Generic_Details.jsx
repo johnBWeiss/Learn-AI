@@ -203,9 +203,10 @@ const Generic_Details = () => {
             <div
               className="space-between"
               style={{
-                width: "30vw",
+                width: "60vw",
                 marginBottom: "50px",
-                minWidth: "400px",
+                minWidth: "300px",
+                maxWidth:'600px'
               }}
             >
               <img
