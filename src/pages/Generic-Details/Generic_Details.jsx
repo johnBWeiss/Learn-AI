@@ -31,6 +31,8 @@ import c4 from "../../assets/images/content/c4.jpeg";
 import m1 from "../../assets/images/math svg/m1.jpeg";
 import m2 from "../../assets/images/math svg/m2.jpeg";
 import m3 from "../../assets/images/math svg/gauge.png"
+import m4 from "../../assets/images/math svg/svg2.jpeg"
+import m5 from "../../assets/images/math svg/svg3.jpeg"
 
 import s1 from "../../assets/images/senior/s1.jpeg";
 import s2 from "../../assets/images/senior/s2.jpeg";
@@ -123,7 +125,13 @@ const Generic_Details = () => {
       paragraph2: `This process can be accelerated by utilizing an AI tool that can provide answers to highly specific questions tailored to your immediate needs, while incorporating your own code in the process.`,
     },
   ];
-  let mathArray = [{ src: m1 }, { src: m2 }, { src: m3 }];
+  let mathArray = [
+    { src: m1 },
+    { src: m2 },
+    { src: m3 },
+    { src: m4 },
+    { src: m5 },
+  ];
   let tutorArray = [
     { src: pt1 },
     { src: pt1 },
