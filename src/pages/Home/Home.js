@@ -9,12 +9,10 @@ import topScroll from '../../assets/images/topScroll.png';
 import senior from "../../assets/images/backgroundAI2.jpg"
 import abstract from '../../assets/images/back-1.jpg'
 import data from "../../assets/images/back-3.jpg"
-import scribe from "../../assets/images/back-2.jpg"
-import back4 from "../../assets/images/back-4.jpg"
 import back5 from "../../assets/images/back-5.jpg"
 
 
-const Home = ({ location }) => {
+const Home = () => {
 
 
 
@@ -37,23 +35,6 @@ const Home = ({ location }) => {
             paragraph2: ` Our advanced AI solution provides a comprehensive approach to improving coding abilities, detecting errors, and aligning code with team standards. `
             , paragraph3: `This product can allow senior developers to concentrate on their 
             own tasks while the AI technology assists in mentoring, saving a considerable amount of time and money` },
-        //     {
-        //         title: 'Code Enhancement',
-        //         thumbnail: abstract,
-        //         release_date: 'Refactor your code to perfection',
-        //         dividerColor: 'rgb(182, 249, 255)',
-        //         navTitle: 'code-enhancement',
-
-
-
-        //         // byLine: 'save expenses with an AI powered mentor',
-        //         secondTitle: 'level up your code',
-        //         paragraph: `A junior developer often writes poorly structured code. It takes many months of experience 
-        //         to learn how to write scalable code that adheres to the DRY principle. With One AI, your junior dev will refactor his code with one click, 
-        //         learning in the process how to improve his code writing principles. 
-
-        //   `
-        //     },
 
         {
             title: 'Content Generator',
@@ -67,19 +48,7 @@ const Home = ({ location }) => {
            
          `
         },
-        // {
-        //     title: 'Team Alignment',
-        //     navTitle: 'team-alignment',
-
-        //     thumbnail: back5,
-        //     release_date: 'Conform your code to team principles',
-        //     secondTitle: 'unify your codebase',
-        //     paragraph: `A high quality code base is one with a recurring
-        //      style with obvious structure and best practice syntax, making it easy to read and orient you rposition in the codebase.
-        //      enforcing code unity is a daunting challenge on your own, but with One AI, you can conform your entire code base to a specific ruleset with one click!
-        //   `
-        // },
-        {
+              {
             title: 'Math compiler',
             thumbnail: data,
             navTitle: 'math-compiler',

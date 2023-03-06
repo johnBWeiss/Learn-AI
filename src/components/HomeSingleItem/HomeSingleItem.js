@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { changePopUpStatus, pageDetails } from '../../store/gameSlice'
+import {  pageDetails } from '../../store/gameSlice'
 
 import { useNavigate } from 'react-router';
 import './HomeSingleItem.css';
