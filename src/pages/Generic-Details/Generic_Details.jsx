@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "./Generic_Details.css";
 import { useSelector } from "react-redux";
@@ -170,7 +171,7 @@ const Generic_Details = () => {
     if (gameSlice.pageDetails.navTitle === "content-generator") {
       setImageArray(content);
     }
-  }, [content, gameSlice, mathArray, navigate, senior, tutorArray]);
+  }, [ gameSlice, navigate]);
 
   return (
     <>
