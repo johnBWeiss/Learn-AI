@@ -63,7 +63,7 @@
     sans-serif;
 
   color: rgb(200, 60, 60);
-  transform: translateY(-200px);
+  transform: translateY(-100px);
 }
 
 .byLine {
@@ -74,7 +74,7 @@
   font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
     sans-serif;
   text-align: center;
-  transform: translateY(-200px);
+  transform: translateY(-100px);
 }
 .HomeContainerGrid {
   display: -webkit-box;
