@@ -63,7 +63,6 @@
     sans-serif;
 
   color: rgb(200, 60, 60);
-  transform: translateY(-100px);
 }
 
 .byLine {
@@ -74,7 +73,6 @@
   font-family: "Ailerons-Typeface", "AquireBold-8Ma60", Helvetica, Arial,
     sans-serif;
   text-align: center;
-  transform: translateY(-100px);
 }
 .HomeContainerGrid {
   display: -webkit-box;
@@ -184,6 +182,7 @@
 @media (max-width: 840px) {
   .HomeDynamicTitle {
     font-size: 110px;
+    
   }
   /* .HomeInnerGrid {
     -ms-grid-columns: 350px;
@@ -199,6 +198,10 @@
 @media (max-width: 747px) {
   .topScroll {
     height: 40px;
+  }
+  .HomeDynamicTitle,.byLine{
+      transform: translateY(-100px);
+
   }
 }
 
