@@ -104,8 +104,8 @@ const Home = () => {
                     <div className='HomeContainerGrid'>
                         {homeGamesArray?.length > 0 && <div
                             className={'HomeInnerGrid'}>
-                            {homeGamesArray?.map((v, i) => (
-                                <div className='singleItem' key={v.id} >
+                            {homeGamesArray?.map((v) => (
+                                <div className='singleItem' key={v.title} >
                                     <HomeSingleItem data={v} />
                                 </div>
                             ))}
