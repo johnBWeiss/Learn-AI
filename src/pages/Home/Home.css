@@ -59,8 +59,8 @@
   align-self: center;
   font-size: 255px;
   /* margin-top: 150px; */
-  font-family: "Ailerons-Typeface","Righteous", "AquireBold-8Ma60", Helvetica, Arial,
-    sans-serif;
+  font-family: "Ailerons-Typeface", "Righteous", "AquireBold-8Ma60", Helvetica,
+    Arial, sans-serif;
 
   color: rgb(200, 60, 60);
 }
@@ -70,8 +70,8 @@
   margin: 0 auto;
   margin-bottom: 50px;
   color: white;
-  font-family: "Ailerons-Typeface","Righteous", "AquireBold-8Ma60", Helvetica, Arial,
-    sans-serif;
+  font-family: "Ailerons-Typeface", "Righteous", "AquireBold-8Ma60", Helvetica,
+    Arial, sans-serif;
   text-align: center;
 }
 .HomeContainerGrid {
@@ -115,6 +115,7 @@
 .mainParagraph {
   font-size: 40px;
   /* max-width: 1200px; */
+  font-family: "Roboto", sans-serif;
 
   padding: 13% 10%;
   min-height: 100vh;
@@ -123,9 +124,9 @@
   background-color: white;
   opacity: 0.8;
   color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
   margin-bottom: 200px;
 }
 
@@ -182,7 +183,6 @@
 @media (max-width: 840px) {
   .HomeDynamicTitle {
     font-size: 110px;
-    
   }
   /* .HomeInnerGrid {
     -ms-grid-columns: 350px;
@@ -199,9 +199,9 @@
   .topScroll {
     height: 40px;
   }
-  .HomeDynamicTitle,.byLine{
-      transform: translateY(-100px);
-
+  .HomeDynamicTitle,
+  .byLine {
+    transform: translateY(-100px);
   }
 }
 
