@@ -27,12 +27,13 @@ import c1 from "../../assets/images/content/c1.jpeg";
 import c2 from "../../assets/images/content/c2.jpeg";
 import c3 from "../../assets/images/content/c3.jpeg";
 import c4 from "../../assets/images/content/c4.jpeg";
+import c5 from "../../assets/images/content/c5.jpeg";
 
 import m1 from "../../assets/images/math svg/m1.jpeg";
 import m2 from "../../assets/images/math svg/m2.jpeg";
-import m3 from "../../assets/images/math svg/gauge.png"
-import m4 from "../../assets/images/math svg/svg2.jpeg"
-import m5 from "../../assets/images/math svg/svg3.jpeg"
+import m3 from "../../assets/images/math svg/gauge.png";
+import m4 from "../../assets/images/math svg/svg2.jpeg";
+import m5 from "../../assets/images/math svg/svg3.jpeg";
 
 import s1 from "../../assets/images/senior/s1.jpeg";
 import s2 from "../../assets/images/senior/s2.jpeg";
@@ -156,7 +157,13 @@ const Generic_Details = () => {
     { src: s10 },
     { src: s11 },
   ];
-  let content = [{ src: c1 }, { src: c2 }, { src: c3 }, { src: c4 }];
+  let content = [
+    { src: c1 },
+    { src: c2 },
+    { src: c3 },
+    { src: c4 },
+    { src: c5 },
+  ];
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     // gameSlice?.pageDetails?.backgroundImage? navigate('/') : null
@@ -179,7 +186,7 @@ const Generic_Details = () => {
     if (gameSlice.pageDetails.navTitle === "content-generator") {
       setImageArray(content);
     }
-  }, [ gameSlice, navigate]);
+  }, [gameSlice, navigate]);
 
   return (
     <>
@@ -214,7 +221,7 @@ const Generic_Details = () => {
                 width: "60vw",
                 marginBottom: "50px",
                 minWidth: "300px",
-                maxWidth:'600px'
+                maxWidth: "600px",
               }}
             >
               <img
