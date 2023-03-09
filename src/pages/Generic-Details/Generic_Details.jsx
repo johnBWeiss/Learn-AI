@@ -103,7 +103,7 @@ const Generic_Details = () => {
          `,
     },
     {
-      title: "Math compiler",
+      title: "Math Compiler",
       thumbnail: f2,
       navTitle: "math-compiler",
 
