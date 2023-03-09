@@ -28,6 +28,8 @@ import c2 from "../../assets/images/content/c2.jpeg";
 import c3 from "../../assets/images/content/c3.jpeg";
 import c4 from "../../assets/images/content/c4.jpeg";
 import c5 from "../../assets/images/content/c5.jpeg";
+import c6 from "../../assets/images/content/c6.jpeg";
+import c7 from "../../assets/images/content/c7.jpeg";
 
 import m1 from "../../assets/images/math svg/m1.jpeg";
 import m2 from "../../assets/images/math svg/m2.jpeg";
@@ -161,6 +163,8 @@ const Generic_Details = () => {
     { src: c1 },
     { src: c2 },
     { src: c3 },
+    { src: c6 },
+    { src: c7 },
     { src: c4 },
     { src: c5 },
   ];
