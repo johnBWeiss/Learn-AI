@@ -48,7 +48,7 @@ const Home = () => {
          `
         },
               {
-            title: 'Math compiler',
+            title: 'Math Compiler',
             thumbnail: data,
             navTitle: 'math-compiler',
 
