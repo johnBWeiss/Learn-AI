@@ -18,18 +18,18 @@ import pt1 from "../../assets/images/private-tutor/pt1.png";
 import pt2 from "../../assets/images/private-tutor/pt2.jpeg";
 import pt3 from "../../assets/images/private-tutor/pt3.jpeg";
 import pt4 from "../../assets/images/private-tutor/pt4.jpeg";
-import pt5 from "../../assets/images/private-tutor/pt5.jpeg";
+// import pt5 from "../../assets/images/private-tutor/pt5.jpeg";
 import pt6 from "../../assets/images/private-tutor/pt6.jpeg";
-import pt7 from "../../assets/images/private-tutor/pt7.jpeg";
+// import pt7 from "../../assets/images/private-tutor/pt7.jpeg";
 import pt8 from "../../assets/images/private-tutor/pt8.jpeg";
 
-import c1 from "../../assets/images/content/c1.jpeg";
-import c2 from "../../assets/images/content/c2.jpeg";
-import c3 from "../../assets/images/content/c3.jpeg";
-import c4 from "../../assets/images/content/c4.jpeg";
-import c5 from "../../assets/images/content/c5.jpeg";
+// import c1 from "../../assets/images/content/c1.jpeg";
+// import c2 from "../../assets/images/content/c2.jpeg";
+// import c3 from "../../assets/images/content/c3.jpeg";
+// import c4 from "../../assets/images/content/c4.jpeg";
+// import c5 from "../../assets/images/content/c5.jpeg";
 import c6 from "../../assets/images/content/c6.jpeg";
-import c7 from "../../assets/images/content/c7.jpeg";
+// import c7 from "../../assets/images/content/c7.jpeg";
 
 import m1 from "../../assets/images/math svg/m1.jpeg";
 import m2 from "../../assets/images/math svg/m2.jpeg";
@@ -38,15 +38,15 @@ import m4 from "../../assets/images/math svg/svg2.jpeg";
 import m5 from "../../assets/images/math svg/svg3.jpeg";
 
 import s1 from "../../assets/images/senior/s1.jpeg";
-import s2 from "../../assets/images/senior/s2.jpeg";
+// import s2 from "../../assets/images/senior/s2.jpeg";
 import s4 from "../../assets/images/senior/s4.jpeg";
-import s5 from "../../assets/images/senior/s5.jpeg";
+// import s5 from "../../assets/images/senior/s5.jpeg";
 import s6 from "../../assets/images/senior/s6.jpeg";
 import s7 from "../../assets/images/senior/s7.jpeg";
-import s8 from "../../assets/images/senior/s8.jpeg";
-import s9 from "../../assets/images/senior/s9.jpeg";
-import s10 from "../../assets/images/senior/s10.jpeg";
-import s11 from "../../assets/images/senior/s11.jpeg";
+// import s8 from "../../assets/images/senior/s8.jpeg";
+// import s9 from "../../assets/images/senior/s9.jpeg";
+// import s10 from "../../assets/images/senior/s10.jpeg";
+// import s11 from "../../assets/images/senior/s11.jpeg";
 
 const Generic_Details = () => {
   const navigate = useNavigate();
@@ -98,7 +98,7 @@ const Generic_Details = () => {
       secondTitle: "Content generation made easy",
       paragraph: `Composing quality content for an app can be challenging to accomplish independently.
               `,
-      paragraph2: `One AI provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
+      paragraph2: `Learn AI provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
            
          `,
     },
@@ -113,7 +113,7 @@ const Generic_Details = () => {
               `,
       paragraph2: `The SVG-centric animations used in these dashboards require in-depth mathematical knowledge to create and maintain consistently. 
             `,
-      paragraph3: `   With One AI, you can eliminate the need for specialized skills and free up valuable resources, allowing you to focus on other critical aspects of your project.
+      paragraph3: `   With Learn AI, you can eliminate the need for specialized skills and free up valuable resources, allowing you to focus on other critical aspects of your project.
         `,
     },
     {
@@ -141,32 +141,32 @@ const Generic_Details = () => {
     { src: pt2 },
     { src: pt3 },
     { src: pt4 },
-    { src: pt5 },
+    // { src: pt5 },
     { src: pt6 },
-    { src: pt7 },
+    // { src: pt7 },
     { src: pt8 },
   ];
   let senior = [
     { src: s1 },
-    { src: s2 },
+    // { src: s2 },
     { src: s4 },
     { src: s4 },
-    { src: s5 },
+    // { src: s5 },
     { src: s6 },
     { src: s7 },
-    { src: s8 },
-    { src: s9 },
-    { src: s10 },
-    { src: s11 },
+    // { src: s8 },
+    // { src: s9 },
+    // { src: s10 },
+    // { src: s11 },
   ];
   let content = [
-    { src: c1 },
-    { src: c2 },
-    { src: c3 },
+    // { src: c1 },
+    // { src: c2 },
+    // { src: c3 },
     { src: c6 },
-    { src: c7 },
-    { src: c4 },
-    { src: c5 },
+    // { src: c7 },
+    // { src: c4 },
+    // { src: c5 },
   ];
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

@@ -43,7 +43,7 @@ const Home = () => {
             release_date: 'Create production-grade content ',
             secondTitle: 'Content generation made easy',
             paragraph: `Composing quality content for an app can be challenging to accomplish independently.
-              `, paragraph2: `One AI provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
+              `, paragraph2: `Learn AI provides a solution by enabling you to efficiently generate high-quality content on any subject worldwide, saving you time and effort.
            
          `
         },
@@ -56,7 +56,7 @@ const Home = () => {
             secondTitle: 'create stunning dashboards',
             paragraph: `Developing data visualization dashboards can be a formidable challenge that demands a significant amount of expertise and resources.
               `, paragraph2: `The SVG-centric animations used in these dashboards require in-depth mathematical knowledge to create and maintain consistently. 
-            `, paragraph3: `   With One AI, you can eliminate the need for specialized skills and free up valuable resources, allowing you to focus on other critical aspects of your project.
+            `, paragraph3: `   With Learn AI, you can eliminate the need for specialized skills and free up valuable resources, allowing you to focus on other critical aspects of your project.
         `
         },
         {
@@ -90,12 +90,12 @@ const Home = () => {
             {true && <div className='HomeContainer'>
                 <div className='HomeInnerContainer'>
                     <div className='banner'>
-                        <div className='HomeDynamicTitle'>One<span className='snakeEyes' >:</span><span style={{ color: 'white' }}>AI</span>
+                        <div className='HomeDynamicTitle'>Learn<span className='snakeEyes' > </span><span style={{ color: 'white' }}>AI</span>
 
                         </div>   <div className=' byLine' >             hyper optimize junior developers
                         </div>
                     </div>
-                    <div className='mainParagraph'><span className='center red title'>Welcome to One AI</span>
+                    <div className='mainParagraph'><span className='center red title'>Welcome to Learn AI</span>
                         <br /> Our enterprise-level onboarding tool for junior developers is designed to optimize the efficiency of your newly recruited team members. With this tool, you can access the most effective methods to enhance the onboarding process, ensuring that your team members can quickly and efficiently integrate into your organization.</div>
                     {data}
 
