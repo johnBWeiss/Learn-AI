@@ -60,8 +60,7 @@
   font-size: 255px;
   font-size: 12rem;
   /* margin-top: 150px; */
-  font-family: "Ailerons-Typeface", "Righteous", "AquireBold-8Ma60", Helvetica,
-    Arial, sans-serif;
+  font-family: "Orbitron", sans-serif;
 
   color: rgb(200, 60, 60);
 }
@@ -71,8 +70,8 @@
   margin: 0 auto;
   margin-bottom: 50px;
   color: white;
-  font-family: "Ailerons-Typeface", "Righteous", "AquireBold-8Ma60", Helvetica,
-    Arial, sans-serif;
+  font-family: "Orbitron", sans-serif;
+
   text-align: center;
 }
 .HomeContainerGrid {
@@ -177,13 +176,11 @@
     grid-template-columns: repeat(2, 380px);
     grid-gap: 36px 36px;
   }
-
 }
 @media (max-width: 840px) {
   .HomeDynamicTitle {
     font-size: 90px;
   }
-
 }
 @media (max-width: 873px) {
   .HomeInnerGrid {
@@ -215,7 +212,6 @@
 }
 
 @media (max-width: 550px) {
-
   .HomeDynamicTitle {
     font-size: 65px;
     margin-top: 50px;
@@ -238,7 +234,7 @@
     grid-template-columns: 90%; */
   }
   .HomeDynamicTitle {
-    font-size: 80px;
+    font-size: 68px;
     margin-bottom: 10px;
   }
   .title {

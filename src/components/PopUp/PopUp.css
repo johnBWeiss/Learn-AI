@@ -15,7 +15,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Libre Baskerville", serif;
+font-family: 'Orbitron', sans-serif;
   -webkit-animation: grad 0.4s linear 0s 1 forwards;
   animation: grad 0.4s linear 0s 1 forwards;
 }
